@@ -7,9 +7,9 @@ const searchForm = document.querySelector(".search")
 
 const generateTemplate = todo => {
     const html = `
-    <li class="list-group-item d-flex justify-content-between align-items-center">
+    <li class="liler addtodo list-group-item d-flex justify-content-between align-items-center">
         <span>${todo}</span>
-        <i class="far fa-trash-alt delete"></i>
+        <i style="color:#cca98a" class="fas fa-check"></i>
     </li>`
 
     list.innerHTML += html
@@ -44,7 +44,7 @@ searchForm.addEventListener("submit", e => {
 });
 
 lists.addEventListener("click", e => {
-    if(e.target.classList.contains("far")){
+    if(e.target.classList.contains("fas")){
     e.target.parentElement.remove()
 
     const data = JSON.parse(localStorage.getItem("todo"))

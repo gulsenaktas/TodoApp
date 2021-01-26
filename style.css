@@ -1,18 +1,57 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body{
-    background: #352f5b;
+    background: #cca98a;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
   }
-  .container{
-    max-width: 400px;
+  .clips{
+    position: absolute;
+    width: 30%;
+    height: 25%;
+    left: calc(50vw - 270px);
+    top: 2%;
+    background-image: url(/img/bant.png);
+    background-size: 10rem;
+    background-repeat: no-repeat;
   }
+  .wrapper{
+    max-width: 450px;
+    margin:6vh auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid black;
+  }
+  .title{
+    color: #cca98a;
+  }
+  .lists{
+    width: 90%;
+    margin: auto;
+  } 
+  .liler{
+    border-bottom: 1px solid black !important; 
+  }  
   input[type=text],
   input[type=text]:focus{
-    color: #fff;
-    border: none;
-    background: rgba(0,0,0,0.2);
+    color: rgb(0, 0, 0);
+    border-style: none;
+    border-bottom: 1px solid black;
+    background:transparent;
     max-width: 400px;
+    box-shadow: none;
+  }
+  .addtodo{
+    color: black;
   }
   .todos li{
-    background: #423a6f;
+    background: transparent;
+    border-style:none ;
   }
   .delete{
     cursor: pointer;
