@@ -6,7 +6,7 @@ To-do list with pure JavaScript.
 
 Add a new todo, searh todos and remove which is done.
 
-# Used techniques
+# Techniques Used
 
 * DOM Manipulation
 * Local Storage
